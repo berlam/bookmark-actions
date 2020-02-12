@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>net.berla.intellij.bookmarkactions</id>
+    <name>Bookmark Actions</name>
+    <vendor url="https://github.com/berlam/bookmark-actions" email="berlam@users.noreply.github.com"/>
+
+    <description><![CDATA[
+      Adds actions for better bookmark management.
+    ]]></description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <actions>
+        <action id="GotoNextGlobalBookmark" class="net.berla.intellij.bookmarkactions.NextGlobalBookmarkAction"
+                text="Next Global Bookmark" description="Navigate to the next bookmark in the editor">
+            <add-to-group group-id="Bookmarks" anchor="after" relative-to-action="GotoNextBookmark"/>
+            <add-to-group group-id="EditBookmarksGroup" anchor="after" relative-to-action="GotoNextBookmark"/>
+        </action>
+        <action id="GotoPreviousGlobalBookmark" class="net.berla.intellij.bookmarkactions.PreviousGlobalBookmarkAction"
+                text="Previous Global Bookmark" description="Navigate to the previous bookmark in the editor">
+            <add-to-group group-id="Bookmarks" anchor="after" relative-to-action="GotoPreviousBookmark"/>
+            <add-to-group group-id="EditBookmarksGroup" anchor="after" relative-to-action="GotoPreviousBookmark"/>
+        </action>
+    </actions>
+</idea-plugin>
