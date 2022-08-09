@@ -1,8 +1,9 @@
 # Bookmark Actions Changelog
 
 ## [Unreleased]
-### Changed
-- Upgrade to latest SDK.
+
+## [1.2.0]
+Update to kotlin.
 
 ## [1.1.0]
 ### Fixed
